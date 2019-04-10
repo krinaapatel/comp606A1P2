@@ -1,4 +1,5 @@
 <?php
+session_start();
   include 'dbconfig.php';
   $fname=$_SESSION['username'];
   $email=$_SESSION['email'];
@@ -41,7 +42,7 @@
   	          echo "<td>".$fname."</td>";
   	          echo "<td>".$row['date']."</td>";
   	          echo "<td>".$row['time']."</td>";
-	      		  echo '<td><a href="delete.php" id='.$row['b_id'].'" Onclick="ConfirmDelete(event)""'>Cancel</a></td>''
+	      		  echo '<td><a href="delete.php?'id='.$row['b_id'].'" Onclick="ConfirmDelete(event)">Cancel</a></td>''
       		    echo "</tr>";
         }
         ?>
