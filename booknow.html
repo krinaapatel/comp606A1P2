@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Sports Massage Therapist Booking</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<section class = "bookheader margin40">
+    
+</section>
+<section class = "margin40">
+  <div class "container">
+    <div class = "row">
+      <div class = "col-md-4"></div>
+      <div class = "col-md-4 padding40">
+          <form action = "book.php" method = "post" class="user">
+               <div class = "form-group row">
+                    <label for  = "textarea">Patients Detail :</label>
+                    <input type = "textarea" class = "form-control form-control-user"
+                    name = "prob" placeholder = "Give your detail problems..">
+                </div>
+
+                <div class = "form-group">
+                  <label for = "date">Date :</label>
+                  <input type = "date" name = "date">
+                </div>
+
+                <div class = "form-group row">
+                    <label class = "time" for = "time">Available Time Slot :</label>
+                    <input type = "radio" name = "time" value="8-10"> 8-10
+                    <input type = "radio" name = "time" value="10-12"> 10-12
+                    <input type = "radio" name = "time" value="10-12"> 12-1
+                </div>
+
+                <div>
+                  <p>Select therapist type :
+                  <select name="therapyType">
+                    <option value="Acupuncture" name = "therapyType" >Acupuncture</option>
+                    <option value='Fascial Stretch Therapy' name = "therapyType" >Fascial Stretch Therapy</option>
+                    <option value='Dry Needling' name = "therapyType">Dry Needling</option>
+
+                  </select>
+                </div>
+                <input type="button" class="btn btn-primary btn-user btn-block" value = "Book Now" name = "submit">
+
+            </form>
+          </div>
+          <div class = "col-md-4"></div>
+        </div>
+      </div>
+</section>
+
+  <!-- Bootstrap core JavaScript -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
