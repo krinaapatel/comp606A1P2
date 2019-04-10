@@ -6,56 +6,58 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+
   <title>Sports Massage Therapist - Login</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  
+
   <!-- Custom styles-->
-  
-  <link href="style.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class = "bg-gradient-primary">
 <section>
-  <div class="container">
-  <div class="bg-shadow">
-    <div class="row">
-      <div class="col-xl-10 col-lg-12 col-md-9">
-        <div class="col-lg-6 bg-login-image padding40">
-          <img src="images/left_login1.jpg">
+  <div class = "container">
+  <div class = "bg-shadow">
+    <div class = "row">
+      <div class = "col-xl-10 col-lg-12 col-md-9">
+        <div class = "col-lg-6 bg-login-image padding40">
+          <img src = "images/left_login1.jpg">
         </div>
-        <div class="col-lg-6 padding40">
-          <div class="text-center">
-                <h1 class="h4">Welcome Back!</h1>
+        <div class = "col-lg-6 padding40">
+          <div class = "text-center">
+                <h1 class = "h4">Welcome Back!</h1>
           </div>
-          <form class="user">
-                <div class="form-group">
-                   <input type="email" class="form-control form-control-user" id="InputEmail" placeholder="Enter Email Address...">
+          <form class = "user" action = "validation.php" method = "post">
+                <div class = "form-group">
+                   <input type = "email" class = "form-control form-control-user" name = "email" 
+                   placeholder = "Enter Email Address..." required>
                 </div>
-                <div class="form-group">
-                     <input type="password" class="form-control form-control-user" id="InputPassword" placeholder="Password">
+                <div class = "form-group">
+                     <input type = "password" class = "form-control form-control-user" name = "password" 
+                     placeholder = "Password" required>
                 </div>
-               
-                <a href="index.html" class="btn btn-primary btn-user btn-block">Login</a>
-                <hr>  
+                <button name = "Login" class = "btn btn-primary btn-user btn-block">Login</button>
+                <hr>
           </form>
-           
-              <div class="text-center">
-                  <a class="small" href="forgot-password.html">Forgot Password?</a>
-              </div>
-              <div class="text-center">
-                  <a class="small" href="register.html">Create an Account!</a>
-              </div>
+
+          <div class = "text-center">
+              <a class = "small" href = "forgot-password.html">Forgot Password?</a>
+          </div>
+          <div class = "text-center">
+              <a class = "small" href = "register.html">Create an Account!</a>
+          </div>
         </div>
       </div>
-    </div> 
+    </div>
     </div>
   </div>
 </section>
-  <!-- Bootstrap core JavaScript-->
+
+ <!-- Bootstrap core JavaScript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+ 
 </body>
 </html>
