@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    $num = $_SESSION ['rannum'];
+session_start();
+$num=$_SESSION ['rannum'];
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -13,7 +13,7 @@
 <body>
 <section class = "randomimg text-white text-center">
     <div class = "overlay"></div>
-        <a href = "login.html" class = "text-white" > Back to Home</a>
+    <a href = "login.html" class = "text-white" > Back to Home</a>
     </div>
 </section>
 
@@ -28,7 +28,7 @@
 	</div>
 </section>
 <?php
-    unset($_SESSION['rannum']);
+unset($_SESSION['rannum']);
  ?>
 </body>
 </html>

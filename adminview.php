@@ -52,12 +52,12 @@
               echo "<td>".$row['date']."</td>";
               echo "<td>".$row['time']."</td>";
               echo "<td>".$row['thr_typ']."</td>";
-	      		  echo '<td><a href="delete.php?a_id='.$row['d_id'].'" Onclick="ConfirmDelete(event)""'>Cancel</a></td>'';
+	      		  echo '<td><a href="delete.php?a_id='.$row['b_id'].'" Onclick="ConfirmDelete(event)""'>Cancel</a></td>'';
       		    echo "</tr>";
             }
         }
         ?>
-          
+
       	</table>
       </div>
       <div class = "col-sm-2"></div>

@@ -1,9 +1,9 @@
-<<?php
+<?php
   include 'dbconfig.php';
-  $fname    = $_SESSION['username'];
-  $email    = $_SESSION['email'];
-  $query    = "SELECT * FROM book WHERE email = '$email'";
-	$results  = $conn->query($query);
+  $fname=$_SESSION['username'];
+  $email=$_SESSION['email'];
+  $query ="SELECT * FROM book WHERE email = '$email'";
+			$results = $conn->query($query);
 
  ?>
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Sports Massage Therapist Booking</title>
+  <title>Sports Massage Therapist Booking Home</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -38,10 +38,10 @@
           <?php
             while($row=$results->fetch_assoc()){
               echo "<tr>";
-  	          echo "<td>".$row['fname']."</td>";
+  	          echo "<td>".$fname."</td>";
   	          echo "<td>".$row['date']."</td>";
   	          echo "<td>".$row['time']."</td>";
-	      		  echo '<td><a href="delete.php?id='.$row['d_id'].'" Onclick="ConfirmDelete(event)"">Cancel</a></td>';
+	      		  echo '<td><a href="delete.php" id='.$row['b_id'].'" Onclick="ConfirmDelete(event)""'>Cancel</a></td>''
       		    echo "</tr>";
         }
         ?>
@@ -52,8 +52,8 @@
 </section>
 
   <!-- Bootstrap core JavaScript -->
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src = "vendor/jquery/jquery.min.js"></script>
+  <script src = "vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- ask to user for delete row-->
   <script type = "text/javascript">
     function ConfirmDelete(e) {
